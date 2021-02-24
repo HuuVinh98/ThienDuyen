@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <title>Món nước các loại</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../subStyles/monNuoc.css">
+</head>
+
+<body>
+    <div class="navBar">
+        <a href="../index.html"><img title="Tích cực ăn chay vận may sẽ đến" src="../images/logo3.png" alt="Logo"
+                style="width:200px; height:100px"></a>
+        <div class="barMobile">
+            <i class="fa fa-bars" onclick="openBar()"></i>
+            <div class="barMobile-list" id="mobileList">
+                <i class="fa fa-times" onclick="closeBar()"></i>
+                <button><a href="./timKiem.html"><i class="fas fa-search"></i>TÌM KIẾM</a></button>
+                <div class="dropdown">
+                    <button class="dropbtn">THỰC ĐƠN <i onclick="openDrop()" class="fa fa-caret-down"></i></button>
+                    <div class="drop-content" id="drop-content">
+                        <a href="./ngayChay.html">Ngày chay</a>
+                        <a href="./monCom.html">Món cơm</a>
+                        <a href="./monNuoc.html">Món nước</a>
+                        <a href="./giaiKhat.html">Giải khát</a>
+                        <a href="./anVat.html">Ăn vặt</a>
+                        <a href="./khac.html">Thực phẩm chay khác</a>
+                    </div>
+                    <script>
+                        let drop = 0;
+                        function openDrop() {
+                            drop++;
+                            if (drop % 2 !== 0) {
+                                document.getElementById("drop-content").style.display = "block";
+                            }
+                            else {
+                                document.getElementById("drop-content").style.display = "none";
+                            }
+
+                        }
+                    </script>
+                </div>
+                <button><a href="./html/banChay.html"><i class="fab fa-hotjar" style="color: red;"></i>BÁN
+                        CHẠY</a></button>
+                <button><a href="./html/dangNhap.html"><i class="fa fa-fw fa-user"></i>ĐĂNG NHẬP</a></button>
+                <button><a href="./html/lienHe.html"><i class="fa fa-fw fa-envelope"></i>LIÊN HỆ</a></button>
+            </div>
+            <script>
+                function openBar() {
+                    document.getElementById("mobileList").style.display = "flex";
+                }
+                function closeBar() {
+                    document.getElementById("mobileList").style.display = "none";
+                }
+            </script>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">THỰC ĐƠN <i class="fa fa-caret-down"></i></button>
+            <div class="drop-content">
+                <a href="./ngayChay.html">Ngày chay</a>
+                <a href="./monCom.html">Món cơm</a>
+                <a href="./monNuoc.html">Món nước</a>
+                <a href="./giaiKhat.html">Giải khát</a>
+                <a href="./anVat.html">Ăn vặt</a>
+                <a href="./khac.html">Thực phẩm chay khác</a>
+            </div>
+        </div>
+        <button><a href="./banChay.html"><i class="fab fa-hotjar" style="color: red;"></i>BÁN CHẠY</a></button>
+        <button><a href="./timKiem.html"><i class="fas fa-search"></i>TÌM KIẾM</a></button>
+        <button><a href="./dangNhap.html"><i class="fa fa-fw fa-user"></i>ĐĂNG NHẬP</a></button>
+        <button><a href="./lienHe.html"><i class="fa fa-fw fa-envelope"></i>LIÊN HỆ</a></button>
+    </div>
+    <br>
+    <div class="menuNoodle">
+        <div class="noodle">
+            <img src="../images/monAn/bunBo.jpg">
+            <p>Bún bò Huế <br><i>12K - 20K</i></p>
+        </div>
+        <div class="noodle">
+            <img src="../images/monAn/bunChaGio.png">
+            <p>Bún chả giò <br><i>12K - 20K</i></p>
+        </div>
+        <div class="noodle">
+            <img src="../images/monAn/bunRieu.jpg">
+            <p>Bún riêu <br><i>12K - 20K</i></p>
+        </div>
+        <div class="noodle">
+            <img src="../images/monAn/hutieu.jpg">
+            <p>Hủ tiếu <br><i>12K - 20K</i></p>
+        </div>
+        <div class="noodle">
+            <img src="../images/monAn/khoQua.jpg">
+            <p>Canh khổ qua <br><i>7K/Trái</i></p>
+        </div>
+        <div class="noodle">
+            <img src="../images/monAn/chaoNam.jpg">
+            <p>Cháo nấm <br><i>12K - 20K</i></p>
+        </div>
+        <div class="noodle">
+            <img src="../images/monAn/canhCai.jpg">
+            <p>Canh cải <br><i>5k/Tô</i></p>
+        </div>
+    </div>
+    <br>
+    <!----ENDWWEB-->
+    <footer class="endWeb">
+        <div class="infomation">
+            <div class="info">
+                <img src="../images/logo3.png" style="width:200px; height:100px;">
+                <h3>THÔNG TIN</h3>
+                <br>
+                <p><a href="#">Giới thiệu</a></p>
+                <p><a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScW51TNzS29Oz34hBkB4NHcY2UlcnMgSKpMmjLIu11DZvEkPw/viewform?usp=sf_link">Tuyển
+                        dụng</a></p>
+            </div>
+            <div class="info">
+                <h3>CSKH</h3>
+                <p><a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeszQ20PlXPiMIzMiL2yiM7K8g3236_3fNmPA-MSxzo9FVVVQ/viewform?usp=sf_link">Than
+                        phiền/Chăm sóc khách hàng</a></p>
+            </div>
+            <div class="info">
+                <h3>DỊCH VỤ GIAO THỨC ĂN</h3>
+                <br>
+                <p><a href="https://play.google.com/store/apps/details?id=com.woowahan.vn.baemin&hl=vi&gl=US"
+                        target="_blank">Baemin</a>
+                </p>
+                <p><a href="https://play.google.com/store/apps/details?id=com.gojek.app&hl=vi&gl=US"
+                        target="_blank">Gojek</a>
+                </p>
+                <p><a href="https://play.google.com/store/apps/details?id=com.grab.food.pax&hl=vi&gl=US"
+                        target="_blank">Grabfood</a>
+                </p>
+                <br>
+                <h3>ĐỊA CHỈ</h3>
+                <br>
+                <p><a href="https://www.google.com/maps/place/Qu%C3%A1n+C%C6%A1m+Chay+Thi%E1%BB%87n+Duy%C3%AAn/@10.8454596,106.7843396,17z/data=!3m1!4b1!4m5!3m4!1s0x317527136bdc1f5b:0x84541beb1c800e1f!8m2!3d10.8454543!4d106.7865283?hl=vi-VN"
+                        target="_blank">Số
+                        9, Man Thiện, Hiệp Phú, Quận 9</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="contactIcon">
+            <a href="https://www.facebook.com/MyLeSuKieu" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="author">
+            Powered by <a href="https://www.facebook.com/nghuuvinh98" target="_blank">N.H.Vinh</a>
+        </p>
+    </footer>
+</body>
+
+</html>

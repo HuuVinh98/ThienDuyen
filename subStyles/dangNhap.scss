@@ -1,0 +1,204 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    //background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+    background-image: url("../images/Login.jpg");
+}
+@import "../styles/nvbar";
+@import "../styles/endWeb";
+#login-box 
+{
+    width: 380px;
+    position: relative;
+    height: auto;
+    //top: 50%;
+    left: 20%;
+    margin-top: 300px;
+    transform: translate(-50%, -50%);
+    border-top: solid 5px blue;
+    border-bottom: blue solid 5px;
+     p 
+        {
+            color: white;
+        }
+    h1 
+    {
+       // float: left;
+        color:white;
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    p
+    {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    #textbox 
+    {
+        width: 100%;
+        overflow: hidden;
+        font-size: 20px;
+        padding: 8px 0;
+        margin: 8px 0;
+        border-bottom:  1px solid white;
+        color: white;
+       
+        i 
+        {
+            width: 26px;
+            float: left;
+            text-align: center;
+            color:white;
+        }
+        input
+        {
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 18px;
+            font-weight: bold;
+            width: 80%;
+            float: left;
+            margin: 0 10px;
+            color:white;
+        }
+    }
+    ::placeholder
+    {
+        color:white;
+        font-weight: normal;
+    }
+    #btn, #btn2
+    {   
+        width: 50%;
+        background: #4caf50;
+        color:white ;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #btn
+    {
+        float: left;
+    }
+   
+}
+#register-box 
+    {
+            width: 280px;
+            position: relative;
+            display: none;
+            //top: 50%;
+            left: 20%;
+            margin-top: 20px;
+            transform: translate(-50%, -50%);
+            border-top: solid 5px red;
+            border-bottom: red solid 5px;
+            p 
+                {
+                    color:black;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            h1 
+            {
+            // float: left;
+                color:white;
+                font-size: 40px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            p
+            {
+                text-align: left;
+                margin: 0;
+                padding: 0;
+            }
+            #textbox 
+            {
+                width: 100%;
+                overflow: hidden;
+                font-size: 20px;
+                padding: 8px 0;
+                margin: 8px 0;
+                border-bottom:  1px solid white;
+                color: white;
+            
+                i 
+                {
+                    width: 26px;
+                    float: left;
+                    text-align: center;
+                    color:white;
+                }
+                input
+                {
+                    border: none;
+                    outline: none;
+                    background: none;
+                    font-size: 18px;
+                    font-weight: bold;
+                    width: 80%;
+                    float: left;
+                    margin: 0 10px;
+                    color:white;
+                }
+            }
+            ::placeholder
+            {
+                color:white;
+                font-weight: normal;
+            }
+            #btn3
+            {   
+                width: 50%;
+                background: #4caf50;
+                color:white ;
+                padding: 5px;
+                font-weight: bold;
+                font-size: 18px;
+                cursor: pointer;
+                margin: 5% 25% 5% 25%; 
+            }
+    }
+
+@media only screen and (max-width:63.9375em)
+{
+    body 
+    {
+        width: 100%;
+        background-image: none;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+    }
+    #login-box
+    {
+        width: 100%;
+        margin-top: 200px;
+        input {outline: none;}
+        h1,p{color: black;}
+        #textbox 
+        {
+            i {color: black;}
+            input {color: black ;}
+        }
+        ::placeholder
+        {
+            color:black;
+            font-weight: normal;
+        }
+    }
+}
+

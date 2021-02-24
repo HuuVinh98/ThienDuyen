@@ -1,0 +1,168 @@
+$font: 'Times New Roman', Times, serif;
+.navBar
+{
+    z-index: 2;
+    width: 100%;
+    height:80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:green;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-family: $font; 
+    position: fixed;
+    align-items: center;
+    .barMobile 
+    {
+        display: none;
+    }
+    button 
+    {
+        background-color:green;
+        font-family: $font;
+        height: 80px;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        font-weight: bold;
+        outline: none;
+        &:hover
+        {
+            background-color: #3e8e41;
+            a 
+            {
+                color:yellow;
+            }
+        }
+        a 
+        {    
+            i 
+            {
+                margin-right: 10px;
+            }
+            color: white;
+            text-decoration: none;
+        }
+    }
+    .dropdown
+    {
+        position: relative;
+        display: inline-block;
+        &:hover
+        {
+            .drop-content
+            {
+                display: block;
+            }
+            .dropbtn
+            {
+                background-color: #3e8e41;
+                color: yellow;
+            }
+        }
+        .dropbtn
+        {
+            background-color:green;
+            font-family: $font;
+            color: white;
+            height: 80px;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            font-weight: bold;
+        }
+        .drop-content
+        {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            a 
+            {
+                color: blue;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                &:hover 
+                {
+                    background-color: #ddd;
+                }
+            }
+        }
+    }
+  
+}
+@media only screen and (max-width:63.9375em)
+{
+    .navBar
+    {
+        a {width: 50%;}
+        .dropdown, button {display: none;}
+        position: relative;
+        .barMobile 
+        {
+            display: block;
+            height: 100%;
+            i {
+                height: inherit;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 30px;
+                color: white;
+            }
+            .barMobile-list
+            {
+               display: none;
+               width: 60%;
+               flex-direction: column;
+               position: absolute;
+               top: 0;
+               left: 0;
+               bottom: 0;
+               right: 0;
+               z-index: 2;
+               i {
+                   width: 100%;
+                   text-align: right;
+                   background-color: green;
+                   opacity: 0.8;
+                }
+               .dropdown
+               {
+                   width: 100%;
+                   display: block;
+                   button 
+                   {  
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        width: 100%;
+                        i {width: 10%;}
+                   }
+                   
+               }
+               button 
+               {
+                   display: block;
+                   width: 100%;
+                   a {
+                        display: flex;
+                        width: 100%;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        i {width: 20%;}
+                   }
+               }
+            }
+
+        }
+    }
+    
+}

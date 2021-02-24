@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <title>Quan Com Chay Thien Duyen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="navBar">
+        <a href="./index.html"><img title="Tích cực ăn chay vận may sẽ đến" src="./images/logo3.png" alt="Logo"
+                style="width:200px; height:100px"></a>
+        <!--Start bar responsive-->
+        <div class="barMobile">
+            <i class="fa fa-bars" onclick="openBar()"></i>
+            <div class="barMobile-list" id="mobileList">
+                <i class="fa fa-times" onclick="closeBar()"></i>
+                <button><a href="./html/timKiem.html"><i class="fas fa-search"></i>TÌM KIẾM</a></button>
+                <div class="dropdown">
+                    <button class="dropbtn">THỰC ĐƠN <i onclick="openDrop()" class="fa fa-caret-down"></i></button>
+                    <div class="drop-content" id="drop-content">
+                        <a href="./html/ngayChay.html">Ngày chay</a>
+                        <a href="./html/monCom.html">Món cơm</a>
+                        <a href="./html/monNuoc.html">Món nước</a>
+                        <a href="./html/giaiKhat.html">Giải khát</a>
+                        <a href="./html/anVat.html">Ăn vặt</a>
+                        <a href="./html/khac.html">Thực phẩm chay khác</a>
+                    </div>
+                    <script>
+                        let drop = 0;
+                        function openDrop() {
+                            drop++;
+                            if (drop % 2 !== 0) {
+                                document.getElementById("drop-content").style.display = "block";
+                            }
+                            else {
+                                document.getElementById("drop-content").style.display = "none";
+                            }
+
+                        }
+                    </script>
+                </div>
+                <button><a href="./html/banChay.html"><i class="fab fa-hotjar" style="color: red;"></i>BÁN
+                        CHẠY</a></button>
+                <button><a href="./html/dangNhap.html"><i class="fa fa-fw fa-user"></i>ĐĂNG NHẬP</a></button>
+                <button><a href="./html/lienHe.html"><i class="fa fa-fw fa-envelope"></i>LIÊN HỆ</a></button>
+            </div>
+            <script>
+                function openBar() {
+                    document.getElementById("mobileList").style.display = "flex";
+                }
+                function closeBar() {
+                    document.getElementById("mobileList").style.display = "none";
+                }
+            </script>
+        </div>
+        <!--End bar responsive-->
+        <div class="dropdown">
+            <button class="dropbtn">THỰC ĐƠN <i class="fa fa-caret-down"></i></button>
+            <div class="drop-content">
+                <a href="./html/ngayChay.html">Ngày chay</a>
+                <a href="./html/monCom.html">Món cơm</a>
+                <a href="./html/monNuoc.html">Món nước</a>
+                <a href="./html/giaiKhat.html">Giải khát</a>
+                <a href="./html/anVat.html">Ăn vặt</a>
+                <a href="./html/khac.html">Thực phẩm chay khác</a>
+            </div>
+        </div>
+        <button><a href="./html/banChay.html"><i class="fab fa-hotjar" style="color: red;"></i>BÁN CHẠY</a></button>
+        <button><a href="./html/timKiem.html"><i class="fas fa-search"></i>TÌM KIẾM</a></button>
+        <button><a href="./html/dangNhap.html"><i class="fa fa-fw fa-user"></i>ĐĂNG NHẬP</a></button>
+        <button><a href="./html/lienHe.html"><i class="fa fa-fw fa-envelope"></i>LIÊN HỆ</a></button>
+    </div>
+
+    <br>
+
+    <!--Start slide show-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="./images/monAn/bunBo.jpg" style="width:100%">
+            <div class="caption">Bún bò Huế</div>
+            <div class="numbertext">1/6</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="./images/monAn/com.jpg" style="width:100%;">
+            <div class="numbertext">2/6</div>
+            <div class="caption">Cơm</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="./images/monAn/bapChien.jpg" style="width:100%">
+            <div class="caption">Bắp chiên</div>
+            <div class="numbertext">3/6</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="./images/monAn/trungChien.jpg" style="width:100%">
+            <div class="caption">Trứng chiên</div>
+            <div class="numbertext">4/6</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="./images/nuocUong/rauMa.jpg" style="width:100%">
+            <div class="caption">Rau má đậu xanh</div>
+            <div class="numbertext">5/6</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6/6</div>
+            <img src="./images/anVat/dauPhong.jpg" style="width:100%">
+            <div class="caption">Đậu phộng</div>
+
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+    </div>
+    <!--End slide show-->
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+        //setTimeout(showSlides, 2000);
+        //setInterval(showSlides(slideIndex += 1), 1);
+    </script>
+
+    <!-- Start Decription -->
+    <section class="decription" style="max-width:800px;">
+        <h2 class="storeName">CƠM CHAY THIỆN DUYÊN</h2>
+        <p class="slogan">Tích cực ăn chay, vận may sẽ đến!</p>
+        <p class="decriptionContent">Ngày nay, ăn chay không còn là thói quen ăn uống đạm bạc của những bậc tu hành nữa.
+            Ăn chay đủ chất, khoa học đã trở thành một phong trào sống khỏe, an vui và đang được khuyến khích mạnh mẽ
+            tại khắp nơi trên thế giới.
+            Giảm cân có thể được xem như là kết quả trực tiếp, một trong những lợi ích của việc ăn chay
+            hoặc ăn thuần chay.
+            Lợi ích hỗ trợ giảm cân của việc ăn chay cũng đã từng được chứng minh trong nhiều nghiên cứu khoa học, với
+            những ghi nhận rằng khối lượng cơ thể của nhóm ăn chay luôn giảm nhiều hơn so với những người chọn các chế
+            độ ăn khác.
+            Một trong những lợi ích khác của việc ăn chay là giúp tâm tính hiền hòa, an vui.
+            Việc tiêu thụ các thực phẩm từ thiên nhiên cũng khiến người trường chay có cảm giác thanh bình, an nhiên.
+            Việc ăn chay giúp con người thể hiện tình thương yêu muôn loài, gia tăng lòng bát át và vị tha. Từ đó tâm
+            được yên vui và thoải mái. Đến với <em>Thiện Duyên</em> quý khách sẽ được thưởng thức những món chay đạm bạc
+            nhưng
+            vẫn đầy đủ chất cho một ngày làm việc đầy năng lượng và tinh thần thoải mái, an nhiên.</p>
+    </section>
+    <!--End decription-->
+
+    <section class="special">
+        <article class="specialFood">
+            <p>Đậu hũ sốt cà chua</p>
+            <img src="images/monAn/sotCa.jpg">
+            <p>Chua, ngọt, mặn cho cuộc sống đủ đầy!</p>
+        </article>
+        <article class="specialFood">
+            <p>Canh khổ qua</p>
+            <img src="images/monAn/khoQua.jpg">
+            <p>Thanh nhiệt, giải độc</p>
+        </article>
+        <article class="specialFood">
+            <p>Nha đam hạt chia</p>
+            <img src="images/nuocUong/nhaDam.jpg">
+            <p>Đẹp da, tăng cường sức khỏe</p>
+        </article>
+    </section>
+    <footer class="endWeb">
+        <div class="infomation">
+            <div class="info">
+                <img src="./images/logo3.png" style="width:200px; height:100px;">
+                <h3>THÔNG TIN</h3>
+                <br>
+                <p><a href="#">Giới thiệu</a></p>
+                <p><a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScW51TNzS29Oz34hBkB4NHcY2UlcnMgSKpMmjLIu11DZvEkPw/viewform?usp=sf_link">Tuyển
+                        dụng</a></p>
+            </div>
+
+            <div class="info">
+                <h3>CSKH</h3>
+                <p><a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeszQ20PlXPiMIzMiL2yiM7K8g3236_3fNmPA-MSxzo9FVVVQ/viewform?usp=sf_link">Than
+                        phiền/Chăm sóc khách hàng</a></p>
+            </div>
+
+            <div class="info delivery">
+                <h3>GIAO THỨC ĂN</h3>
+                <br>
+                <p><a href="https://play.google.com/store/apps/details?id=com.woowahan.vn.baemin&hl=vi&gl=US"
+                        target="_blank">Baemin</a>
+                </p>
+                <p><a href="https://play.google.com/store/apps/details?id=com.gojek.app&hl=vi&gl=US"
+                        target="_blank">Gojek</a>
+                </p>
+                <p><a href="https://play.google.com/store/apps/details?id=com.grab.food.pax&hl=vi&gl=US"
+                        target="_blank">Grabfood</a>
+                </p>
+            </div>
+            <div class="info">
+                <h3>ĐỊA CHỈ</h3>
+                <br>
+                <p><a href="https://www.google.com/maps/place/Qu%C3%A1n+C%C6%A1m+Chay+Thi%E1%BB%87n+Duy%C3%AAn/@10.8454596,106.7843396,17z/data=!3m1!4b1!4m5!3m4!1s0x317527136bdc1f5b:0x84541beb1c800e1f!8m2!3d10.8454543!4d106.7865283?hl=vi-VN"
+                        target="_blank">Số
+                        9, Man Thiện, Hiệp Phú, Quận 9</a>
+                </p>
+            </div>
+        </div>
+        <div class="contactIcon">
+            <a href="https://www.facebook.com/MyLeSuKieu" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="author">
+            Powered by <a href="https://www.facebook.com/nghuuvinh98" target="_blank">N.H.Vinh</a>
+        </p>
+    </footer>
+</body>
+
+</html>
